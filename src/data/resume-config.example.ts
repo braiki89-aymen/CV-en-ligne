@@ -12,7 +12,7 @@ import type { ResumeConfig } from './types'
 export const resumeConfig: ResumeConfig = {
   // ===== PERSONAL INFO =====
   personal: {
-    name: 'Jane Doe',
+    name: 'Braiki Aymen',
     // Auto-detected: just drop your photo or profile image in public/images/ (any .jpg, .png, .webp)
     // You can also set a specific path here to override auto-detection:
     photo: '/images/photo.jpg',
@@ -22,16 +22,16 @@ export const resumeConfig: ResumeConfig = {
       fr: 'Développeuse Fullstack',
     },
     subtitle: {
-      en: '6 years of experience',
-      fr: '6 ans d\'expérience',
+      en: '1 years of experience',
+      fr: '1 ans d\'expérience',
     },
-    location: 'Paris, France',
+    location: 'Tunis, Tunisie',
   },
 
   // ===== SEO (used in <head> meta tags) =====
   seo: {
-    title: 'Jane Doe — Fullstack Developer',
-    description: 'Interactive resume of Jane Doe, Fullstack Developer specializing in React and TypeScript.',
+    title: 'Braiki Aymen — Fullstack Developer',
+    description: 'Interactive resume of Braiki Aymen, Fullstack Developer specializing in React and TypeScript.',
   },
 
   // ===== LANGUAGES =====
@@ -46,11 +46,11 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== CONTACT =====
   contact: [
-    { type: 'github', label: 'janedoe', href: 'https://github.com/janedoe' },
-    { type: 'linkedin', label: 'Jane Doe', href: 'https://linkedin.com/in/janedoe' },
-    { type: 'email', label: 'jane@example.com' },
-    { type: 'phone', label: '+33 6 12 34 56 78' },
-    { type: 'location', label: 'Paris, France' },
+    { type: 'github', label: 'braiki89-aymen', href: 'https://github.com/braiki89-aymen' },
+    { type: 'linkedin', label: 'Braiki Aymen', href: 'https://www.linkedin.com/in/aymen-braiki-033115245' },
+    { type: 'email', label: 'braiki_aymen20@yahoo.fr' },
+    { type: 'phone', label: '+216 96 445 085' },
+    { type: 'location', label: 'Tunis, Tunisie' },
   ],
 
   // ===== SKILLS =====
@@ -59,8 +59,8 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'Languages', fr: 'Langues' },
       type: 'languages',
       items: [
-        { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
-        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: 'TOEIC 910' },
+        { name: { en: 'French', fr: 'Français' }, level: { en: 'B2', fr: 'B2' } },
+        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'B2', fr: 'B2' },  },
       ],
     },
     {
@@ -78,12 +78,15 @@ export const resumeConfig: ResumeConfig = {
       items: [
         { name: 'Node.js' },
         { name: 'Python' },
+        { name: 'Java' },
+        
       ],
     },
     {
       title: { en: 'Database', fr: 'Base de données' },
       type: 'badges',
       items: [
+        { name: 'MySQL' },
         { name: 'PostgreSQL' },
         { name: 'MongoDB' },
       ],
@@ -107,197 +110,213 @@ export const resumeConfig: ResumeConfig = {
     },
   ],
 
-  // ===== PROFESSIONAL EXPERIENCES =====
-  experiences: [
-    {
-      id: 'company-a',
-      company: { en: 'TechCorp', fr: 'TechCorp' },
-      role: { en: 'Senior Fullstack Developer', fr: 'Développeuse Fullstack Senior' },
-      type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2022 - Present', fr: '2022 - Présent' },
-      description: {
-        en: 'Led the development of a SaaS platform used by 10k+ users. Built microservices architecture and modern React frontend.',
-        fr: 'Direction du développement d\'une plateforme SaaS utilisée par 10k+ utilisateurs. Architecture microservices et frontend React moderne.',
+  
+// ===== EXPÉRIENCES PROFESSIONNELLES =====
+experiences: [
+  {
+    id: 'talys-consulting',
+    company: { en: 'Talys Consulting', fr: 'Talys Consulting' },
+    role: { en: 'Fullstack Developer Intern', fr: 'Stagiaire Développeur Fullstack' },
+    type: { en: 'Internship', fr: 'Stage' },
+    period: { en: 'June 2025 – August 2025', fr: 'juin 2025 – août 2025' },
+    description: {
+      en: 'Design and development of a full-stack automated credit simulation application.',
+      fr: 'Conception et développement d\'une application full-stack de simulation de crédit automatisée.',
+    },
+    techs: ['Spring Boot', 'Angular', 'TypeScript', 'Java'],
+    isHighlighted: true,
+    details: {
+      context: {
+        en: 'Development of a credit simulation application',
+        fr: 'Développement d\'une application de simulation de crédit',
       },
-      techs: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
-      isHighlighted: true,
-      details: {
-        context: {
-          en: 'Team of 8 developers within a 50-person product company. Agile/Scrum methodology with 2-week sprints, CI/CD pipeline with GitHub Actions, code reviews on every PR.',
-          fr: 'Équipe de 8 développeurs au sein d\'une société produit de 50 personnes. Méthodologie Agile/Scrum avec sprints de 2 semaines, pipeline CI/CD avec GitHub Actions, code review sur chaque PR.',
-        },
-        tasks: {
-          en: [
-            'Designed and implemented the frontend architecture (monorepo, shared component library)',
-            'Built a real-time notification system using WebSockets and Redis pub/sub',
-            'Migrated legacy codebase from JavaScript to TypeScript (200+ files)',
-            'Implemented role-based access control (RBAC) across the entire platform',
-            'Set up automated testing with 85% code coverage (unit, integration, E2E)',
-            'Led the migration from REST to GraphQL for the main API',
-            'Built a dashboard analytics module with interactive charts and export features',
-            'Mentored 3 junior developers through pair programming and weekly 1-on-1s',
-          ],
-          fr: [
-            'Conception et implémentation de l\'architecture frontend (monorepo, bibliothèque de composants partagés)',
-            'Création d\'un système de notifications temps réel via WebSockets et Redis pub/sub',
-            'Migration du code legacy de JavaScript vers TypeScript (200+ fichiers)',
-            'Implémentation d\'un contrôle d\'accès basé sur les rôles (RBAC) sur toute la plateforme',
-            'Mise en place de tests automatisés avec 85% de couverture (unitaires, intégration, E2E)',
-            'Pilotage de la migration de REST vers GraphQL pour l\'API principale',
-            'Développement d\'un module de tableau de bord analytique avec graphiques interactifs et export',
-            'Mentorat de 3 développeurs juniors via pair programming et 1-on-1 hebdomadaires',
-          ],
-        },
-        training: {
-          en: [
-            'AWS Solutions Architect certification',
-            'Internal training on Kubernetes orchestration',
-          ],
-          fr: [
-            'Certification AWS Solutions Architect',
-            'Formation interne sur l\'orchestration Kubernetes',
-          ],
-        },
-        env: {
-          en: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
-          fr: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
-        },
+      tasks: {
+        en: [
+          'Design and development of a full-stack automated credit simulation application',
+          'Implementation of a dynamic 3-step workflow: product selection, data input, and repayment schedule visualization',
+        ],
+        fr: [
+          'Conception et développement d\'une application full-stack de simulation de crédit automatisée',
+          'Mise en place d\'un workflow dynamique en 3 étapes : sélection produit, saisie de données et visualisation d\'échéancier',
+        ],
+      },
+      env: {
+        en: 'Spring Boot / Angular / TypeScript / Java',
+        fr: 'Spring Boot / Angular / TypeScript / Java',
       },
     },
-    {
-      id: 'company-b',
-      company: { en: 'WebAgency', fr: 'WebAgency' },
-      role: { en: 'Frontend Developer', fr: 'Développeuse Frontend' },
-      type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2019 - 2022', fr: '2019 - 2022' },
-      description: {
-        en: 'Developed responsive web applications for various clients. Specialized in React and Angular projects.',
-        fr: 'Développement d\'applications web responsives pour divers clients. Spécialisée en projets React et Angular.',
+  },
+  {
+    id: 'biware-consulting',
+    company: { en: 'Biware Consulting', fr: 'Biware Consulting' },
+    role: { en: 'Data & Reporting Intern', fr: 'Stagiaire Data & Reporting' },
+    type: { en: 'Internship', fr: 'Stage' },
+    period: { en: 'June 2024 – August 2024', fr: 'juin 2024 – août 2024' },
+    description: {
+      en: 'Development of a Data Quality and Reporting system using Python and Power BI.',
+      fr: 'Développement d\'un système de Data Quality et Reporting via Python et Power BI.',
+    },
+    techs: ['Python', 'Power BI'],
+    details: {
+      context: {
+        en: 'Development of a Data Quality and Reporting system',
+        fr: 'Développement d\'un système de Data Quality et Reporting',
       },
-      techs: ['React', 'Angular', 'TypeScript', 'SCSS'],
-      details: {
-        context: {
-          en: 'Digital agency with 20+ clients across various industries (retail, finance, healthcare). Team of 12 developers, working on 3-4 projects simultaneously.',
-          fr: 'Agence digitale avec 20+ clients dans différents secteurs (retail, finance, santé). Équipe de 12 développeurs, travaillant sur 3-4 projets simultanément.',
-        },
-        tasks: {
-          en: [
-            'Built 15+ client-facing web applications from scratch',
-            'Created and maintained a shared design system used across all agency projects',
-            'Implemented complex form workflows with multi-step validation',
-            'Optimized web performance achieving 90+ scores on Core Web Vitals',
-            'Integrated third-party APIs (payment, CRM, analytics)',
-            'Set up Storybook documentation for reusable components',
-            'Collaborated closely with UX designers to translate Figma mockups into pixel-perfect UIs',
-          ],
-          fr: [
-            'Développement de 15+ applications web clients from scratch',
-            'Création et maintenance d\'un design system partagé utilisé sur tous les projets de l\'agence',
-            'Implémentation de workflows de formulaires complexes avec validation multi-étapes',
-            'Optimisation des performances web avec scores 90+ sur les Core Web Vitals',
-            'Intégration d\'APIs tierces (paiement, CRM, analytics)',
-            'Mise en place de la documentation Storybook pour les composants réutilisables',
-            'Collaboration étroite avec les designers UX pour traduire les maquettes Figma en interfaces pixel-perfect',
-          ],
-        },
-        training: {
-          en: [
-            'Angular Advanced workshop (2 days)',
-            'Accessibility (WCAG 2.1) certification',
-          ],
-          fr: [
-            'Workshop Angular Avancé (2 jours)',
-            'Certification Accessibilité (WCAG 2.1)',
-          ],
-        },
-        env: {
-          en: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
-          fr: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
-        },
+      tasks: {
+        en: [
+          'Development of a Data Quality and Reporting system using Python and Power BI',
+          'Creation of interactive dashboards and automation of data validation',
+        ],
+        fr: [
+          'Développement d\'un système de Data Quality et Reporting via Python et Power BI',
+          'Création de tableaux de bord interactifs et automatisation de la validation de données',
+        ],
+      },
+      env: {
+        en: 'Python / Power BI',
+        fr: 'Python / Power BI',
       },
     },
-    {
-      id: 'internship',
-      company: { en: 'StartupXYZ', fr: 'StartupXYZ' },
-      role: { en: 'Fullstack Developer Intern', fr: 'Stagiaire Développeuse Fullstack' },
-      type: { en: 'Internship', fr: 'Stage' },
-      period: { en: '2018 - 2019', fr: '2018 - 2019' },
-      description: {
-        en: 'Contributed to the development of an e-commerce platform. Gained experience in fullstack development.',
-        fr: 'Contribution au développement d\'une plateforme e-commerce. Acquisition d\'expérience en développement fullstack.',
+  },
+  {
+    id: 'mytek',
+    company: { en: 'Mytek', fr: 'Mytek' },
+    role: { en: 'Digital Marketing Agent', fr: 'Agent Marketing' },
+    type: { en: 'Contract', fr: 'CDD' },
+    period: { en: 'September 2021 – October 2022', fr: 'septembre 2021 – octobre 2022' },
+    description: {
+      en: 'Digital communication management, online customer support and sales optimization.',
+      fr: 'Gestion de la communication digitale, optimisation du support client et des ventes en ligne.',
+    },
+    techs: [],
+    details: {
+      context: {
+        en: 'Digital communication and sales optimization',
+        fr: 'Communication digitale et optimisation des ventes',
       },
-      techs: ['React', 'Node.js', 'MongoDB', 'Machine Learning'],
-      details: {
-        context: {
-          en: 'Early-stage startup (seed round), small team of 5 developers building an e-commerce platform from the ground up. Fast-paced environment with weekly releases.',
-          fr: 'Startup en phase de démarrage (seed round), petite équipe de 5 développeurs construisant une plateforme e-commerce from scratch. Environnement rapide avec des releases hebdomadaires.',
-        },
-        tasks: {
-          en: [
-            'Developed the product catalog with advanced filtering and search',
-            'Built the shopping cart with real-time inventory checking',
-            'Integrated Stripe payment gateway with 3D Secure support',
-            'Implemented user authentication with JWT and OAuth (Google, Facebook)',
-            'Created an admin dashboard for order management and analytics',
-            'Wrote API documentation with Swagger/OpenAPI',
-          ],
-          fr: [
-            'Développement du catalogue produits avec filtrage avancé et recherche',
-            'Création du panier d\'achat avec vérification de stock en temps réel',
-            'Intégration de la passerelle de paiement Stripe avec support 3D Secure',
-            'Implémentation de l\'authentification utilisateur avec JWT et OAuth (Google, Facebook)',
-            'Création d\'un tableau de bord admin pour la gestion des commandes et les analytics',
-            'Rédaction de la documentation API avec Swagger/OpenAPI',
-          ],
-        },
-        env: {
-          en: 'React / Node.js / Express / MongoDB / Stripe / JWT / Docker / Heroku',
-          fr: 'React / Node.js / Express / MongoDB / Stripe / JWT / Docker / Heroku',
-        },
+      tasks: {
+        en: ['Digital communication management, optimization of customer support and online sales'],
+        fr: ['Gestion de la communication digitale, optimisation du support client et des ventes en ligne'],
+      },
+      env: {
+        en: 'Digital Marketing Tools',
+        fr: 'Outils de Marketing Digital',
       },
     },
-  ],
+  },
+  {
+    id: 'tunis-call-center',
+    company: { en: 'Tunis Call Center', fr: 'Tunis Call Center' },
+    role: { en: 'Sales Agent', fr: 'Agent Commercial' },
+    type: { en: 'Contract', fr: 'CDD' },
+    period: { en: 'November 2018 – January 2020', fr: 'novembre 2018 – janvier 2020' },
+    description: {
+      en: 'Management of inbound/outbound commercial negotiations and processing of sales offers.',
+      fr: 'Gestion des négociations commerciales entrantes/sortantes et traitement des offres de vente.',
+    },
+    techs: [],
+    details: {
+      context: {
+        en: 'Inbound/outbound commercial negotiations and sales processing',
+        fr: 'Négociations commerciales entrantes/sortantes et traitement des ventes',
+      },
+      tasks: {
+        en: ['Management of inbound/outbound commercial negotiations and processing of sales offers'],
+        fr: ['Gestion des négociations commerciales entrantes/sortantes et traitement des offres de vente'],
+      },
+      env: {
+        en: 'Commercial Tools',
+        fr: 'Outils Commerciaux',
+      },
+    },
+  },
+  {
+    id: 'orange-tunisie',
+    company: { en: 'Orange Tunisie', fr: 'Orange Tunisie' },
+    role: { en: 'Technical Sales Advisor', fr: 'Conseiller Technico-Commercial' },
+    type: { en: 'Contract', fr: 'CDD' },
+    period: { en: 'December 2015 – November 2016', fr: 'décembre 2015 – novembre 2016' },
+    description: {
+      en: 'Sale of technical products, after-sales support and inventory management.',
+      fr: 'Vente de produits techniques, support après-vente et gestion des stocks.',
+    },
+    techs: [],
+    details: {
+      context: {
+        en: 'Sale of technical products and inventory management',
+        fr: 'Vente de produits techniques et gestion des stocks',
+      },
+      tasks: {
+        en: ['Sale of technical products, after-sales support and inventory management'],
+        fr: ['Vente de produits techniques, support après-vente et gestion des stocks'],
+      },
+      env: {
+        en: 'Retail and Technical Sales Tools',
+        fr: 'Outils de Vente et Support Technique',
+      },
+    },
+  },
+],
 
-  // ===== PROJECTS (optional) =====
-  projects: [
-    {
-      id: 'project-a',
-      title: { en: 'WeatherApp', fr: 'WeatherApp' },
-      description: {
-        en: 'A real-time weather dashboard built with React and OpenWeather API.',
-        fr: 'Un tableau de bord météo en temps réel construit avec React et l\'API OpenWeather.',
-      },
-      techs: ['React', 'TypeScript'],
-      url: 'https://weather-app.example.com',
-      github: 'https://github.com/janedoe/weather-app',
+// ===== PROJETS ACADÉMIQUES =====
+projects: [
+  {
+    id: 'skillup',
+    title: { en: 'Skillup (Microservices)', fr: 'Skillup (Microservices)' },
+    description: {
+      en: 'Modular e-learning platform developed with Spring Boot and Angular. Implementation of RabbitMQ (async) and FeignClient (sync) for inter-service communication.',
+      fr: 'Plateforme d\'e-learning modulaire développée avec Spring Boot et Angular. Implémentation de RabbitMQ (asynchrone) et FeignClient (synchrone) pour la communication entre services.',
     },
-    {
-      id: 'project-b',
-      title: { en: 'TaskManager', fr: 'TaskManager' },
-      description: {
-        en: 'A Kanban-style task management tool with drag-and-drop.',
-        fr: 'Un outil de gestion de tâches style Kanban avec glisser-déposer.',
-      },
-      techs: ['React', 'Node.js', 'PostgreSQL'],
-      github: 'https://github.com/janedoe/task-manager',
+    techs: ['Spring Boot', 'Angular', 'RabbitMQ', 'FeignClient'],
+  },
+  {
+    id: 'event-connect',
+    title: { en: 'Event Connect', fr: 'Event Connect' },
+    description: {
+      en: 'Event management application built with Spring Boot and Angular. Integration of Stripe for payments and an AI model for success prediction.',
+      fr: 'Application de gestion d\'événements réalisée avec Spring Boot et Angular. Intégration de Stripe pour les paiements et d\'un modèle d\'IA pour la prédiction de succès.',
     },
-  ],
+    techs: ['Spring Boot', 'Angular', 'Stripe', 'AI/ML'],
+  },
+  {
+    id: 'rs-sport',
+    title: { en: 'RS-SPORT', fr: 'RS-SPORT' },
+    description: {
+      en: 'Football club management system built with Spring Boot and Angular. Implementation of RBAC and real-time dashboards.',
+      fr: 'Système de gestion de club de football conçu avec Spring Boot et Angular. Mise en place d\'un contrôle d\'accès sécurisé (RBAC) et de tableaux de bord en temps réel.',
+    },
+    techs: ['Spring Boot', 'Angular', 'RBAC'],
+  },
+  {
+    id: 'bank-loan-simulator',
+    title: { en: 'Bank Loan Simulator', fr: 'Bank Loan Simulator' },
+    description: {
+      en: 'Credit simulation tool developed with Spring Boot and Angular. Dynamic 3-step workflow with automatic repayment schedule calculation.',
+      fr: 'Outil de simulation de crédit développé avec Spring Boot et Angular. Workflow dynamique en 3 étapes avec calcul automatique des échéanciers de remboursement.',
+    },
+    techs: ['Spring Boot', 'Angular'],
+  },
+],
 
-  // ===== EDUCATION =====
-  education: [
-    {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
-      degree: { en: 'Master in Computer Science', fr: 'Master Informatique' },
-      specialty: { en: 'Web & Mobile Development', fr: 'Développement Web & Mobile' },
-      period: '2017 - 2019',
-    },
-    {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
-      degree: { en: 'Bachelor in Computer Science', fr: 'Licence Informatique' },
-      period: '2014 - 2017',
-    },
-  ],
-
+// ===== FORMATION =====
+education: [
+  {
+    school: { en: 'ESPRIT – École Supérieure Privée d\'Ingénierie et des Technologies', fr: 'ESPRIT – École Supérieure Privée d\'Ingénierie et des Technologies' },
+    degree: { en: 'Engineering Degree in Software Engineering', fr: 'Diplôme d\'Ingénieur en Génie Logiciel' },
+    specialty: { en: 'Software Engineering', fr: 'Génie Logiciel' },
+    period: 'En cours',
+  },
+  {
+    school: { en: 'École Supérieure de Commerce de Tunis', fr: 'École Supérieure de Commerce de Tunis' },
+    degree: { en: 'Master in Marketing', fr: 'Mastère en Marketing' },
+    period: '2013',
+  },
+  {
+    school: { en: 'École Supérieure de Commerce de Tunis', fr: 'École Supérieure de Commerce de Tunis' },
+    degree: { en: 'Bachelor in Management Information Systems', fr: 'Licence en Informatique de Gestion' },
+    period: '2011',
+  },
+],
   // ===== HOBBIES (optional) =====
   hobbies: [
     {
@@ -316,12 +335,7 @@ export const resumeConfig: ResumeConfig = {
     {
       title: { en: 'Open Source', fr: 'Open Source' },
     },
-    {
-      title: { en: 'Guitar', fr: 'Guitare' },
-      details: [
-        { en: '3 years', fr: '3 ans' },
-      ],
-    },
+    
   ],
 
   // ===== PDF (optional) =====
