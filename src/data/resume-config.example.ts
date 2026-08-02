@@ -113,6 +113,53 @@ export const resumeConfig: ResumeConfig = {
   
 // ===== EXPÉRIENCES PROFESSIONNELLES =====
 experiences: [
+
+  {
+    id: 'talys-consulting',
+    company: { en: 'Talys Consulting', fr: 'Talys Consulting' },
+    role: { en: 'AI Engineering Intern', fr: 'Stagiaire Ingénieur IA' },
+    type: { en: 'Internship', fr: 'Stage PFE' },
+    period: { en: 'February 2026 – July 2026', fr: 'février 2026 – juillet 2026' },
+    description: {
+      en: 'Design and development of CodeSage, an AI-powered code review agent integrated with GitHub, Bitbucket, VS Code and IntelliJ IDEA.',
+      fr: 'Conception et développement de CodeSage, un agent IA de revue de code intégré à GitHub, Bitbucket, VS Code et IntelliJ IDEA.',
+    },
+    techs: ['Python', 'FastAPI', 'Ollama', 'Groq', 'FAISS', 'LangChain', 'TypeScript', 'Kotlin'],
+    isHighlighted: true,
+    details: {
+      context: {
+        en: 'Development of an AI code review agent to automate Pull Request analysis and integrate it into developer workflows',
+        fr: 'Développement d\'un agent IA de revue de code pour automatiser l\'analyse des Pull Requests et l\'intégrer dans le workflow des développeurs',
+      },
+      tasks: {
+        en: [
+          'Built a FastAPI webhook server integrating with GitHub and Bitbucket to trigger automatic PR reviews',
+          'Implemented a dual AI system running Ollama (local, qwen2.5-coder:7b) and Groq (cloud) in parallel for cross-validation',
+          'Designed a RAG system using FAISS and BGE embeddings to store and retrieve context from past merged PRs',
+          'Developed commands: /review, /describe, /improve, /ask, /add_docs, /similar_issue with JSON-structured responses',
+          'Created a VS Code extension with Chat Participant API and SSE streaming for real-time AI responses',
+          'Built an IntelliJ IDEA plugin with a dedicated ToolWindow for in-IDE code review',
+          'Implemented conversational memory per PR using a separate FAISS index for /ask command history',
+        ],
+        fr: [
+          'Développement d\'un serveur webhook FastAPI intégré à GitHub et Bitbucket pour déclencher des reviews automatiques',
+          'Mise en place d\'un système dual IA combinant Ollama (local, qwen2.5-coder:7b) et Groq (cloud) en parallèle pour la cross-validation',
+          'Conception d\'un système RAG avec FAISS et embeddings BGE pour mémoriser et retrouver le contexte des PRs passées',
+          'Implémentation des commandes : /review, /describe, /improve, /ask, /add_docs, /similar_issue avec réponses JSON structurées',
+          'Développement d\'une extension VS Code avec Chat Participant API et streaming SSE pour les réponses IA en temps réel',
+          'Création d\'un plugin IntelliJ IDEA avec ToolWindow dédié pour la revue de code dans l\'IDE',
+          'Implémentation d\'une mémoire conversationnelle par PR via un index FAISS séparé pour l\'historique de la commande /ask',
+        ],
+      },
+      env: {
+        en: 'Python / FastAPI / Ollama / Groq / FAISS / LangChain / TypeScript / Kotlin / GitHub API / Bitbucket API',
+        fr: 'Python / FastAPI / Ollama / Groq / FAISS / LangChain / TypeScript / Kotlin / GitHub API / Bitbucket API',
+      },
+    },
+  },
+
+
+
   {
     id: 'talys-consulting',
     company: { en: 'Talys Consulting', fr: 'Talys Consulting' },
@@ -204,32 +251,7 @@ experiences: [
       },
     },
   },
-  {
-    id: 'tunis-call-center',
-    company: { en: 'Tunis Call Center', fr: 'Tunis Call Center' },
-    role: { en: 'Sales Agent', fr: 'Agent Commercial' },
-    type: { en: 'Contract', fr: 'CDD' },
-    period: { en: 'November 2018 – January 2020', fr: 'novembre 2018 – janvier 2020' },
-    description: {
-      en: 'Management of inbound/outbound commercial negotiations and processing of sales offers.',
-      fr: 'Gestion des négociations commerciales entrantes/sortantes et traitement des offres de vente.',
-    },
-    techs: [],
-    details: {
-      context: {
-        en: 'Inbound/outbound commercial negotiations and sales processing',
-        fr: 'Négociations commerciales entrantes/sortantes et traitement des ventes',
-      },
-      tasks: {
-        en: ['Management of inbound/outbound commercial negotiations and processing of sales offers'],
-        fr: ['Gestion des négociations commerciales entrantes/sortantes et traitement des offres de vente'],
-      },
-      env: {
-        en: 'Commercial Tools',
-        fr: 'Outils Commerciaux',
-      },
-    },
-  },
+  
   {
     id: 'orange-tunisie',
     company: { en: 'Orange Tunisie', fr: 'Orange Tunisie' },
@@ -260,6 +282,19 @@ experiences: [
 
 // ===== PROJETS ACADÉMIQUES =====
 projects: [
+
+  {
+    id: 'codesage',
+    title: { en: 'CodeSage — AI Code Review Agent', fr: 'CodeSage — Agent IA de Revue de Code' },
+    description: {
+      en: 'AI-powered code review agent integrated with GitHub and Bitbucket via webhooks. Combines a local LLM (Ollama + qwen2.5-coder:7b) and a cloud LLM (Groq) running in parallel, with a RAG system using FAISS for codebase memory. Includes a VS Code extension and an IntelliJ IDEA plugin.',
+      fr: 'Agent IA de revue de code intégré à GitHub et Bitbucket via webhooks. Combine un LLM local (Ollama + qwen2.5-coder:7b) et un LLM cloud (Groq) en parallèle, avec un système RAG basé sur FAISS pour la mémoire du codebase. Inclut une extension VS Code et un plugin IntelliJ IDEA.',
+    },
+    techs: ['Python', 'FastAPI', 'Ollama', 'Groq', 'FAISS', 'TypeScript', 'Kotlin'],
+    
+  },
+
+
   {
     id: 'skillup',
     title: { en: 'Skillup (Microservices)', fr: 'Skillup (Microservices)' },
