@@ -18,12 +18,13 @@ export const resumeConfig: ResumeConfig = {
     photo: '/images/photo.jpg',
     photoBackEmoji: '👩‍💻', // Shown when clicking the photo (3D flip)
     title: {
-      en: 'Fullstack Developer',
-      fr: 'Développeuse Fullstack',
+      en: 'Fullstack Developer & AI Engineer',
+      fr: 'Développeur Fullstack & Ingénieur IA',
     },
     subtitle: {
-      en: '1 years of experience',
-      fr: '1 ans d\'expérience',
+      en: 'Spring Boot · Angular · Python · LLM',
+      fr: 'Spring Boot · Angular · Python · LLM',
+      
     },
     location: 'Tunis, Tunisie',
   },
